@@ -3,7 +3,6 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     overflow-y: hidden;
     font-family: 'Montserrat', sans-serif;
@@ -30,11 +29,6 @@ p {
     letter-spacing: .5px;
     margin: 20px 0 30px;
 }
-
-span {
-    font-size: 12px;
-}
-
 a {
     color: #333;
     font-size: 14px;
@@ -119,7 +113,6 @@ button.ghost {
     transition: transform .5s ease-in-out;
     z-index: 100;
 }
-
 .overlay {
     background: #ff416c;
     background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover;
@@ -131,7 +124,6 @@ button.ghost {
     transform: translateY(0);
     transition: transform .6s ease-in-out;
 }
-
 .overlay-panel {
     position: absolute;
     top: 0;
@@ -146,54 +138,37 @@ button.ghost {
     transform: translateY(0);
     transition: transform .6s ease-in-out;
 }
-
 .overlay-right {
     right: 0;
     transform: translateY(0);
 }
-
 .overlay-left {
     transform: translateY(-20%);
 }
-
-/* Move signin to right */
 .container.right-panel-active .sign-in-container {
     transform: translateY(100%);
 }
-
-/* Move overlay to left */
 .container.right-panel-active .overlay-container {
     transform: translateX(-100%);
 }
-
-/* Bring signup over signin */
 .container.right-panel-active .sign-up-container {
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
 }
-
-/* Move overlay back to right */
 .container.right-panel-active .overlay {
     transform: translateX(50%);
 }
-
-/* Bring back the text to center */
 .container.right-panel-active .overlay-left {
     transform: translateY(0);
 }
-
-/* Same effect for right */
 .container.right-panel-active .overlay-right {
     transform: translateY(20%);
 }
-
 .footer {
 	margin-top: 25px;
 	text-align: center;
 }
-
-
 .icons {
 	display: flex;
 	width: 30px;
